@@ -22,8 +22,11 @@ def read_csv(path_to_csv_file, del_= ','):
      List1=[[n.replace('"','') for n  in x] for x in List1]
      for n in List1:
           str(n).split(del_)
-     with open('./data.tsv', 'w') as f:
-                 for i in  List1:
+     return (List1)
+def write_csv(path_to_csv_file, data, del_=','):
+     data1 = [del_.join(i) + '\n' for i in data]
+     with open(path_to_csv_file, 'w') as f:
+                 for i in  data:
                      for j in range(len(i)):
                            if j!=len(i)-1:
                               f.write(i[j]+'\t')
