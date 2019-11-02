@@ -88,8 +88,8 @@ def orf(rna_seq):
     mas = [x for x in mas if x]
     return(mas)
 
-def mass_table():
-        mass_table= {
+
+mass_table= {
         'A':   71.03711,
 	'C':   103.00919,
 	'D':  115.02694,
@@ -111,9 +111,8 @@ def mass_table():
 	'W':   186.07931,
 	'Y':   163.06333
 	}
-        return(mass_table)
-def rna_codon():
-    rna_codon = {
+
+rna_codon = {
     'UUU': 'F',     'CUU': 'L',     'AUU': 'I',     'GUU': 'V',
     'UUC': 'F',     'CUC': 'L',     'AUC': 'I',     'GUC': 'V',
     'UUA': 'L',     'CUA': 'L',     'AUA': 'I',     'GUA': 'V',
@@ -129,7 +128,6 @@ def rna_codon():
     'UGU': 'C',     'CGU': 'R',     'AGU': 'S',     'GGU': 'G',
     'UGC': 'C',     'CGC': 'R',     'AGC': 'S',     'GGC': 'G',
     'UGA': 'Stop',  'CGA': 'R',     'AGA': 'R',     'GGA': 'G',
-    'UGG': 'W',     'CGG': 'R',     'AGG': 'R',     'GGG': 'G'
-    }
-    return(rna_codon)
+    'UGG': 'W',     'CGG': 'R',     'AGG': 'R',     'GGG': 'G' }
+
 
